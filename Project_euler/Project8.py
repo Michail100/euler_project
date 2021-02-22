@@ -11,15 +11,17 @@ def project8(n):
         return b
     def max1():
         res = schet()
-        print(len(res))
         res1 = []
         for i in res:
             bb = [int(j) for j in i]
-            res1.append(bb[0]*bb[1]*bb[2]*bb[3])
+            a=1
+            for qq in bb:
+                a=a*qq
+            res1.append(a)
         return max(res1)
     return max1()
 
-print(project8(4))
+print(project8(13))
 
 
 
